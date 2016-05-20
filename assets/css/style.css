@@ -1,0 +1,48 @@
+
+body {
+	background-image: url(../images/starwar1.jpg); 
+	background-repeat: no-repeat;
+}
+
+.header-style-chg {
+	color: #FFD700;
+	padding-bottom: 20px;
+}
+
+#word-to-guess	{
+	letter-spacing: 14px;
+	font-size: 15px;
+	color: #fff;
+}
+
+#letter-clicked	{
+	letter-spacing: 10px;
+	font-size: 20px;
+	color: #fff;
+}
+
+#missed-point	{
+	font-size: 20px;
+	color: red;
+}
+
+#remaining-point	{
+	font-size: 20px;
+	color: red;
+}
+
+.panel-heading-style	{
+	color: #B22222;
+	font-size: 20px;
+}
+
+.panel-body {
+	background:	#DAA520;
+}
+
+#hman-image	{
+	opacity: 0.6;
+}
+
+
+

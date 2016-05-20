@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Hangman Game by Anand Gopalakrishnan</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet"> 
+
+</head>
+    <body>
+
+        <!-- Header -->
+        <header>
+            <!-- NO HEADER USED -->
+        </header>
+
+        <!-- Page Content -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header header-style-chg">
+                        Hangman Game
+                    </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="panel panel-default">  <!-- START PANEL FOR GAME RULES -->
+                        <div class="panel-heading text-center">
+                            <h3 class="panel-title panel-heading-style">Game Rules</h3>
+                        </div>
+                        <div class="panel-body">
+                            <ol class="list-group">
+                                <li class="list-group-item list-group-item-success">Use only alphabets A - Z, numbers 0 - 9 or a space on your keypad.</li>
+                                <li class="list-group-item list-group-item-info">If the clicked key is part of the word then it will be displayed.</li>
+                                <li class="list-group-item list-group-item-warning">If the clicked key is not part of word, you will loose a turn.</li>
+                                <li class="list-group-item list-group-item-danger">You will have until 7 chances before getting hanged.</li>
+                                <li class="list-group-item list-group-item-success">Good Luck!!! Do. Or do not. There is no try. – Yoda</li>
+                            </ol>
+                        </div>
+                    </div>  <!-- END PANEL FOR GAME RULES -->
+                    <div class="panel panel-default">   <!-- START PANEL FOR THE GAME -->
+                        <div class="panel-heading text-center">
+                            <h3 class="panel-title panel-heading-style">The Game</h3>
+                        </div>
+                        <div class="panel-body text-center">
+                            <p id="word-to-guess"></p>
+                        </div>
+                    </div>  <!-- START PANEL FOR THE GAME -->
+                </div>
+                <div class="col-md-6" onmouseenter="playSWSound()" onmouseleave="stopSWSound()">  <!-- START SIDE IMAGE -->
+                    <img src="assets/images/starwarsword.png"  id="hman-image" width="550px" height="427px">
+                </div>  <!-- END SIDE IMAGE -->
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="panel panel-default">   <!-- START PANEL FOR LETTERS CLICKED  -->
+                        <div class="panel-heading text-center">
+                            <h3 class="panel-title panel-heading-style">Letters Clicked</h3>
+                        </div>
+                        <div class="panel-body text-center">
+                            <p id="letter-clicked">GAME READY</p>
+                        </div>
+                    </div>  <!-- END PANEL FOR LETTERS CLICKED -->
+                </div>
+                <div class="col-md-6">
+                    <div class="col-md-6">
+                        <div class="panel panel-default">   <!-- START PANEL FOR NUMBER OF MISSED POINTS -->
+                            <div class="panel-heading text-center">
+                                <h3 class="panel-title panel-heading-style">Missed</h3>
+                            </div>
+                            <div class="panel-body text-center">
+                                <p id="missed-point">0</p>
+                            </div>
+                        </div>  <!-- END PANEL FOR NUMBER OF MISSED POINTS -->
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="panel panel-default">   <!-- START PANEL FOR NUMBER OF REMAINING POINTS -->
+                            <div class="panel-heading text-center">
+                                <h3 class="panel-title panel-heading-style">Remaining</h3>
+                            </div>
+                            <div class="panel-body text-center">
+                                <p id="remaining-point">7</p>
+                            </div>
+                        </div>  <!-- END PANEL FOR NUMBER OF REMAINING POINTS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <!-- NO FOOTER USED -->
+        </footer>
+        
+
+        <!-- jQuery -->
+        <script src="assets/js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="assets/js/bootstrap.min.js"></script>
+
+        <!-- User defined -->
+        <script src="assets/js/hangman.js"></script> 
+        <script src="assets/js/morehangman.js"></script> 
+
+    </body>
+</html>
